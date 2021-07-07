@@ -1,9 +1,9 @@
 const fs = require('fs');
 const path = require('path');
-const { animals } = require('./data/animals');
+const { notes } = require('./db/db.json');
 const express = require('express');
 const apiRoutes = require('./routes/apiRoutes');
-const htmlRoutes = require('./routes/htmlRoutes');
+const htmlRoutes = require('./routes/apiRoutes/htmlRoutes');
 
 const PORT = process.env.PORT || 3001;
 const app = express();
